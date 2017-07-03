@@ -16,25 +16,33 @@ Auth::routes();
 Route::get('/', 'HomeController@index')->name('home');
 
 Route::group(['middleware' => ['web']], function(){
-    Route::resource('clientes', 'ClientesController');
+    Route::resource('clientes', 'ClienteController');
 });
 
-Route::get('/listClient', 'ClientesController@list');
+Route::get('/listClient', 'ClienteController@list');
 
-Route::get('/pdfviewClient',array('as'=>'pdfviewClient','uses'=>'ClientesController@pdfview'));
+Route::get('/pdfviewClient',array('as'=>'pdfviewClient','uses'=>'ClienteController@pdfview'));
 
 Route::group(['middleware' => ['web']], function(){
-    Route::resource('veiculos', 'VeiculosController');
+    Route::resource('veiculos', 'VeiculoController');
 });
 
-Route::get('/listVehicle', 'VeiculosController@list');
+Route::get('/listVehicle', 'VeiculoController@list');
 
-Route::get('/pdfviewVehicle',array('as'=>'pdfviewVehicle','uses'=>'VeiculosController@pdfview'));
+Route::get('/pdfviewVehicle',array('as'=>'pdfviewVehicle','uses'=>'VeiculoController@pdfview'));
 
 Route::group(['middleware' => ['web']], function(){
-    Route::resource('rotas', 'RotasController');
+    Route::resource('motoristas', 'MotoristaController');
 });
 
-Route::get('/listRoute', 'RotasController@list');
+Route::get('/listDriver', 'MotoristaController@list');
 
-Route::get('/pdfviewRoute',array('as'=>'pdfviewRoute','uses'=>'RotasController@pdfview'));
+Route::get('/pdfviewDriver',array('as'=>'pdfviewDriver','uses'=>'MotoristaController@pdfview'));
+
+Route::group(['middleware' => ['web']], function(){
+    Route::resource('rotas', 'RotaController');
+});
+
+Route::get('/listRoute', 'RotaController@list');
+
+Route::get('/pdfviewRoute',array('as'=>'pdfviewRoute','uses'=>'RotaController@pdfview'));

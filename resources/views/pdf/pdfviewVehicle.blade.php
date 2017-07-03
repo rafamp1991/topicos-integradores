@@ -11,18 +11,14 @@
 	<table>
 		<tr>
 			<th>Placa</th>
-			<th>Modelo</th>
-			<th>Ano</th>
-			<th>Cor</th>
+			<th>Marca</th>
 		</tr>
 
 		@foreach ($veiculos as $key => $veiculo)
 
 			<tr>
 				<td>{{ $veiculo->placa}}</td>
-				<td>{{ $veiculo->modelo}}</td>
-				<td>{{ $veiculo->ano}}</td>
-				<td>{{ $veiculo->cor}}</td>
+				<td>{{ $veiculo->marca}}</td>
 			</tr>	
 
 		@endforeach

@@ -19,8 +19,8 @@
                     </div>
 
                     <div class="form-group col-sm-12">
-                        <label for="cod_rota">Codigo da Rota:</label>
-                        <input type="text" class="form-control" id="cod_rota" name="cod_rota" value="" placeholder="Codigo da Rota">
+                        <label for="cod_rota">Código da rota:</label>
+                        <input type="cod_rota" class="form-control" id="cod_rota" name="cod_rota" value="" placeholder="Código da rota">
                         {{($errors->has('cod_rota')) ? $errors->first('cod_rota') : ''}}
                     </div>
 

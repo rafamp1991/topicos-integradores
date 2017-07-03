@@ -13,8 +13,8 @@
                         <p>Nome: <a href="/clientes/{{$cliente->id}}">{{$cliente->nome}}</a></p>
                         <p>Cpf: {{$cliente->cpf}}</p>
                         <p>Endereço: {{$cliente->endereco}}</p>
-                        <p>E-mail: {{$cliente->email}}</p>                       
-               
+                        <p>E-mail: {{$cliente->email}}</p>                                              
+                        
                         <form action="/clientes/{{$cliente->id}}" method="POST">
                             <input type="hidden" name="_method" value="delete">
                             <input type="hidden" name="_token" value="{{csrf_token()}}">

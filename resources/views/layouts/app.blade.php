@@ -61,12 +61,20 @@
                     </ul>
                   </li>
 
+                  <li><a ><i class="fa fa-truck"></i> Motoristas <span class="fa fa-chevron-down"></span></a>
+                      <ul class="nav child_menu">
+                       <li><a href="/motoristas/create">Cadastrar</a></li>
+                       <li><a href="/listDriver">Listar</a></li>
+                    </ul>
+                  </li>
+
                   <li><a ><i class="fa fa-road"></i> Rotas <span class="fa fa-chevron-down"></span></a>
                       <ul class="nav child_menu">
                        <li><a href="/rotas/create">Cadastrar</a></li>
                        <li><a href="/listRoute">Listar</a></li>
                     </ul>
                   </li>
+
                 </ul>
               </div>
              

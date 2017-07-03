@@ -10,9 +10,9 @@
             <div class="panel panel-default">
                 <div class="links text-center">
                     @foreach($todosrotas as $rota)
-                        <p>Cidade: <a href="/rotas/{{$rota->id}}">{{$rota->Cidade}}</a></p>
-                        <p>Endereço de Entrega: {{$rota->endereco_entrega}}</p>
-                        <p>Codigo da Rota: {{$rota->cod_rota}}</p>
+                        <p>Cidade: <a href="/rotas/{{$rota->id}}">{{$rota->cidade}}</a></p>
+                        <p>Endereço de entrega: {{$rota->endereco_entrega}}</p>
+                        <p>Código da rota: {{$rota->cod_rota}}</p>                                              
                         
                         <form action="/rotas/{{$rota->id}}" method="POST">
                             <input type="hidden" name="_method" value="delete">

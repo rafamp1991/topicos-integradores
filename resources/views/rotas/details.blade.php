@@ -10,10 +10,10 @@
                         Cidade: {{$detailpage->cidade}}
                     </p>
                     <p>
-                        Endereço de Entrega: {{$detailpage->endereco_entrega}}
+                        Endereço de entrega: {{$detailpage->endereco_entrega}}
                     </p>
                     <p>
-                        Codigo da Rota: {{$detailpage->cod_rota}}
+                        Código da rota: {{$detailpage->cod_rota}}
                     </p>
 
                     <a class="btn btn-info" href="/listRoute">Voltar</a>
