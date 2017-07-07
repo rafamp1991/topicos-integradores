@@ -3874,5 +3874,63 @@
             "testing",
             "xunit"
         ]
+    },
+    {
+        "name": "nanigans/single-table-inheritance",
+        "version": "0.7.1",
+        "version_normalized": "0.7.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/Nanigans/single-table-inheritance.git",
+            "reference": "3bc5a6823d4ed5aea77a5f3fbe677b10ca51a0a0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/Nanigans/single-table-inheritance/zipball/3bc5a6823d4ed5aea77a5f3fbe677b10ca51a0a0",
+            "reference": "3bc5a6823d4ed5aea77a5f3fbe677b10ca51a0a0",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/database": "5.2.*|5.3.*|5.4.*",
+            "illuminate/support": "5.2.*|5.3.*|5.4.*",
+            "php": ">= 5.5.9"
+        },
+        "require-dev": {
+            "mockery/mockery": "0.9.*",
+            "orchestra/testbench": "3.2.*",
+            "phpunit/phpunit": "~4.8|~5.2"
+        },
+        "time": "2017-02-13 12:49:28",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.8.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Nanigans\\SingleTableInheritance\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Jon Palmer",
+                "email": "jpalmer@nanigans.com"
+            }
+        ],
+        "description": "Single Table Inheritance Trait",
+        "keywords": [
+            "eloquent",
+            "inheritance",
+            "laravel",
+            "model",
+            "single",
+            "table"
+        ]
     }
 ]
